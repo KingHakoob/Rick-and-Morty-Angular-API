@@ -1,0 +1,20 @@
+.card {
+  width: 40rem;
+  background-color: #252525 !important;
+}
+
+.Alive {
+  box-shadow: inset 0 -3em 3em rgba(17, 25, 250, 0.141), 0.3em 0.3em 1em rgba(17, 25, 250, 0.262);
+}
+
+.Dead {
+  box-shadow: inset 0 -3em 3em rgba(200, 27, 27, 0.3), 0.3em 0.3em 1em rgba(200, 27, 27, 0.3);
+}
+
+.unknown {
+  box-shadow: inset 0 -3em 3em rgba(255, 255, 255, 0.1), 0.3em 0.3em 1em rgba(255, 255, 255, 0.3);
+}
+
+.cardTxt {
+  color: white;
+}
