@@ -17,21 +17,23 @@ export class AppComponent {
   title = 'dekokjapi';
   data: ApiData = {};
 
-  constructor(private _apiservice: ApifetchService){}
+  constructor(private _apiservice: ApifetchService) { }
 
-  public prevPage () {
-    if(this.page > 1){
+  public prevPage() {
+    if (this.page > 1) {
       this.page--;
       this.ngOnInit();
     }
   }
 
-  public nextPage () {
-    this.page++;
-    this.ngOnInit();
+  public nextPage() {
+    if (this.page < 42) {
+      this.page++;
+      this.ngOnInit();
+    }
   }
 
-  ngOnInit(){
+  ngOnInit() {
     this._apiservice.getData(this.page).subscribe(res => {
       this.data = res;
       console.log(this.data);
