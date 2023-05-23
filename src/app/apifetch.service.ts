@@ -8,7 +8,7 @@ export class ApifetchService {
 
   constructor(private _http: HttpClient) { }
 
-  getData(){
-    return this._http.get('https://rickandmortyapi.com/api/character')
+  getData(page: number = 1){
+    return this._http.get(`https://rickandmortyapi.com/api/character/?page=${page}`)
   }
 }

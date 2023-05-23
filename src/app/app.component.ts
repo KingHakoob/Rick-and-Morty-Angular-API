@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ApifetchService } from './apifetch.service';
 
 export interface ApiData {
@@ -12,13 +12,27 @@ export interface ApiData {
 })
 
 export class AppComponent {
+  @Input() page: number = 1;
+
   title = 'dekokjapi';
   data: ApiData = {};
 
   constructor(private _apiservice: ApifetchService){}
 
+  public prevPage () {
+    if(this.page > 1){
+      this.page--;
+      this.ngOnInit();
+    }
+  }
+
+  public nextPage () {
+    this.page++;
+    this.ngOnInit();
+  }
+
   ngOnInit(){
-    this._apiservice.getData().subscribe(res => {
+    this._apiservice.getData(this.page).subscribe(res => {
       this.data = res;
       console.log(this.data);
     })

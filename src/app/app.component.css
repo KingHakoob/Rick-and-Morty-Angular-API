@@ -3,3 +3,30 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.pageBtns {
+    position: sticky;
+    bottom: 0;
+}
+
+.btnCol {
+    display: flex;
+    justify-content: center;
+}
+
+.btns {
+    width: 10rem;
+    color: white;
+    background-color: #1a1a1a;
+    border: 0.05rem solid #ffffff39;
+}
+
+.btns:hover {
+    background-color: #1a1a1a00;
+    border: 0;
+}
+
+.pageNum {
+    color: white;
+    font-size: 1.5rem;
+}
