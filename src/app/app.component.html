@@ -1,16 +1,1 @@
-<div class="container">
-  <app-charcard class="cardComp"
-    *ngFor="let char of data.results" 
-    [name]="char.name!"
-    [image]="char.image!"
-    [species]="char.species!"
-    [status]="char.status!"
-    ></app-charcard>
-</div>
-<div class="columns pageBtns">
-  <div class="column btnCol">
-    <button class="button btns mr-1" (click)="prevPage()">Previous Page</button>
-    <p class="pageNum">{{ page }}</p>
-    <button class="button btns ml-1" (click)="nextPage()">Next Page</button>
-  </div>
-</div>
+<router-outlet></router-outlet>
