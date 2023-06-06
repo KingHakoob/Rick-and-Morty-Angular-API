@@ -1,5 +1,5 @@
 <div class="container">
-    <app-charcard class="cardComp" *ngFor="let char of data.results" [name]="char.name!" [image]="char.image!"
+    <app-charcard (click)="charPage()" class="cardComp" *ngFor="let char of data.results" [name]="char.name!" [image]="char.image!"
         [species]="char.species!" [status]="char.status!"></app-charcard>
 </div>
 <div class="columns pageBtns">

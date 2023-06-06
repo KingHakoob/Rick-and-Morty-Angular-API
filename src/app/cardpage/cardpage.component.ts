@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ApifetchService } from '../apifetch.service';
+import { Router } from '@angular/router';
 
 export interface ApiData {
   info?: Object,
@@ -17,7 +18,15 @@ export class CardpageComponent {
   title = 'dekokjapi';
   data: ApiData = {};
 
-  constructor(private _apiservice: ApifetchService) { }
+  constructor(private _apiservice: ApifetchService, private router: Router) { }
+
+  // goto2(){
+  //   this.router.navigate(["/child2"])
+  // }
+
+  public charPage() {
+    this.router.navigate(["/charpage"])
+  }
 
   public prevPage() {
     if (this.page > 1) {
