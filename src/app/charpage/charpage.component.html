@@ -1,1 +1,16 @@
-<p>charpage works!</p>
+<div class="pt-5 pb-5">
+    <div class="card columns {{char.status}}">
+        <div class="card-image column">
+            <figure class="image is-4by3">
+                <img class="cardImg" [src]="char.image" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="card-content column">
+            <div class="media-content">
+                <p class="title is-4 cardTxt">{{ char.name }}</p>
+                <p class="subtitle is-6 cardTxt">{{ char.species }}</p>
+                <p class="subtitle is-6 cardTxt">{{ char.status }}</p>
+            </div>
+        </div>
+    </div>
+    </div>
