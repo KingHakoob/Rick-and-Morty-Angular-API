@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
 }
 
 .card {
@@ -27,4 +27,21 @@
 
 .cardTxt {
   color: white;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.backBtn {
+  width: 10rem;
+  color: white;
+  background-color: #1a1a1a;
+  border: 0.05rem solid #ffffff39;
+}
+
+.backBtn:hover {
+  background-color: #1a1a1a00;
+  border: 0;
 }
