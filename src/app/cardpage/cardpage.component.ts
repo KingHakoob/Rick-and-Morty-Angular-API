@@ -43,6 +43,6 @@ export class CardpageComponent {
   }
   
   public charPage(char: CharData) {
-      this.router.navigate(["/charpage"], {state: {data: char}})
+      this.router.navigate(["/charpage"], {state: {data: char}});
   }
 }
