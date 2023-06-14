@@ -1,4 +1,8 @@
 # Dekokjapi
+This project was created to get familiarized with Angular. It pulls from a Rick and Morty api and generates cards for all 
+of the characters, and, when a card is clicked, routes to a character page.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
